@@ -1,0 +1,445 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #1A56DB;
+  padding: 1rem 20px !important;
+  border-radius: 12px !important;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056B3;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #9999;
+  border-radius: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #5A6268;
+  color: #fff;
+}
+
+/* Botão de Perigo */
+.btn-danger {
+  background-color: #DC3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #BD2130;
+}
+
+/* Botão com Ícone */
+.btn-icon {
+  gap: 0.3rem;
+}
+
+/* ====================================
+   2. Inputs
+   ==================================== */
+
+/* Campo de Entrada Padrão */
+.input-field {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #495057;
+  background-color: #ffffff;
+  border: 1px solid #007BFF;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+/* Campo de Entrada em Foco */
+.input-field:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Placeholder do Campo de Entrada */
+.input-field::placeholder {
+  color: #6c757d;
+  opacity: 1; /* Firefox */
+}
+
+/* Campo de Entrada Desabilitado */
+.input-field:disabled {
+  background-color: #e9ecef;
+  border-color: #007BFF;
+  cursor: not-allowed;
+}
+
+
+/* ====================================
+   3. Card
+   ==================================== */
+
+/* Cartão Padrão */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ====================================
+   4. Tabela
+   ==================================== */
+
+/* Container da Tabela */
+.table-container {
+  border-radius: 8px;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+/* Estilos Básicos da Tabela */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: 0.9rem;
+}
+
+/* Cabeçalhos e Células da Tabela */
+.table th,
+.table td {
+  text-align: left;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Estilos dos Cabeçalhos */
+.table th {
+  font-weight: 600;
+  color: #6B7280;
+  background-color: #f8f9fa;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* Linhas Zebradas */
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Ajustes nas Células */
+.table td {
+  position: relative;
+  color: #6B7280;
+  vertical-align: middle;
+}
+
+
+/* ====================================
+   5. Ações na Tabela
+   ==================================== */
+
+/* Esconde os Botões por Padrão */
+.table tbody tr .action-button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostra os Botões ao Hover na Linha */
+.table tbody tr:hover .action-button {
+  opacity: 1;
+}
+
+
+/* ====================================
+   6. Status Colorido
+   ==================================== */
+
+/* Badge de Status Padrão */
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Status: Não Realizada */
+.status-nao-realizada {
+  background-color: #007bff30;
+  color: #1E429F;
+  border-radius: 12px;
+}
+
+/* Status: Cancelada */
+.status-cancelada {
+  background-color: #dc354622;
+  color: #9B1C1C;
+  border-radius: 12px;
+}
+
+/* Status: Realizada */
+.status-realizada {
+  background-color: #28a74633;
+  color: #03543F;
+  border-radius: 12px;
+}
+
+
+/* ====================================
+   7. Modal de Confirmação
+   ==================================== */
+
+/* Overlay do Modal de Confirmação */
+.confirm-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Conteúdo do Modal de Confirmação */
+.confirm-modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  padding: 24px;
+}
+
+/* Cabeçalho do Modal */
+.confirm-modal-header {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.confirm-modal-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.confirm-modal-main-message {
+  font-size: 1.25rem;
+  color: #000;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.confirm-modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.confirm-modal-body {
+  margin-bottom: 24px;
+}
+
+.confirm-modal-message {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Rodapé do Modal */
+.confirm-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.confirm-modal-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-modal-cancel {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.confirm-modal-cancel:hover {
+  background: #e0e0e0;
+}
+
+.confirm-modal-confirm {
+  background: #dc3545;
+  color: white;
+}
+
+.confirm-modal-confirm:hover {
+  background: #c82333;
+}
+
+
+
+/* ====================================
+   8. Botões Personalizados
+   ==================================== */
+
+/* Botão de Sair (Header) */
+.botaoSair {
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #9999;
+  border-radius: 10px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.botaoSair:hover {
+  background-color: #5a626892;
+  color: #fff;
+}
+
+/* Botões de Ação (Editar, Cancelar, Completar, Excluir) */
+.action-button {
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+.action-icon {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Botões com Ícones */
+.btn-icon {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+}
+
+.btn-icon .action-icon {
+  font-size: 1.1em;
+  transition: transform 0.2s ease;
+}
+
+/* Estilos Específicos para Cada Tipo de Botão */
+.btn-edit {
+  background: #e3f2fd;
+  color: #1976d2;
+  border-color: #90caf9;
+}
+
+.btn-edit:hover {
+  background: #bbdefb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(25, 118, 210, 0.1);
+}
+
+.btn-cancel {
+  background: #ffebee;
+  color: #d32f2f;
+  border-color: #ef9a9a;
+}
+
+.btn-cancel:hover {
+  background: #ffcdd2;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(211, 47, 47, 0.1);
+}
+
+.btn-complete {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.btn-complete:hover {
+  background: #c8e6c9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+}
+
+/* Botão Excluir Visita */
+.btn-delete {
+  background-color: #ff790c2f;
+  color: #ff7300;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-right: 0.5rem; /* Moveu do inline style */
+}
+
+.btn-delete:hover {
+  background-color: #ff790c52;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(211, 47, 47, 0.1);
+}
+
+/* Efeito de Hover para Todos os Ícones em Botões */
+.btn-icon:hover .action-icon {
+  transform: scale(1.1);
+}
+
+
+/* ====================================
+   9. Responsividade
+   ==================================== */
+
+@media (max-width: 768px) {
+  /* Ajustes para Botões com Ícones em Telas Menores */
+  .btn-icon span {
+    display: none;
+  }
+  
+  .btn-icon {
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .btn-icon .action-icon {
+    margin: 0;
+    font-size: 1.2em;
+  }
+}
