@@ -1,6 +1,7 @@
-# Portaria Remota
+ # Portaria Remota
 
-Sistema de portaria remota desenvolvido com Vite + React, para uma trilha acadêmica realizada junto com a empresa Accenture.O sistema permite o cadastro e listagem de visitas de forma eficiente.
+Sistema de portaria remota desenvolvido com Vite + React, para uma trilha acadêmica realizada junto com a empresa Accenture.
+O sistema permite o cadastro e listagem de visitas de forma eficiente.
 
 ## Tecnologias utilizadas
 - Vite
